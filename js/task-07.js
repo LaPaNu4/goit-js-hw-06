@@ -6,6 +6,7 @@
 // <span id="text">Abracadabra!</span>
 const inputic = document.querySelector("#font-size-control");
 const textCount = document.querySelector("#text");
+textCount.style.fontSize = inputic.value + "px";
 inputic.addEventListener("input", () => {
   textCount.style.fontSize = `${inputic.value}px`;
 });
